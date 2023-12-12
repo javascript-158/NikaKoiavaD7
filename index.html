@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <!-- image hide show action -->
+    <img
+      id="myImg"
+      src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="mauntains"
+      class="image"
+    />
+    <div class="buttons">
+      <button class="a" onclick="increaseSize()">ფოტოს ზომის გადიდება</button>
+      <button class="a" onclick="reduceSize()">ფოტოს ზომის შემცირება</button>
+    </div>
+
+    <!-- Button color changer -->
+    <div class="callerChange">
+      <div class="text">
+        <span id="t1">Red</span>
+        <span id="t2">Blue</span>
+        <span id="t3">Gree</span>
+      </div>
+      <div class="buttons2">
+        <button class="b" onclick="backGroundRed()">Change Color</button>
+        <button class="b" onclick="backGroundBlue()">Change Color</button>
+        <button class="b" onclick="backGroundGreen()">Change Color</button>
+      </div>
+    </div>
+
+    <!-- Hiden Content -->
+    <div class="hideshow">
+      <p id="p">ესეც დამალული კონტენტი</p>
+      <div class="buttons2">
+        <button class="b" onclick="content('show')">ჩვენება</button>
+        <button class="b" onclick="content('hide')">დამალვა</button>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
